@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Budget Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>💰 Personal Budget Tracker</h1>
+        <div class="balance">
+            <h2>Balance: ₹<span id="balance">0</span></h2>
+            <p>Income: ₹<span id="income">0</span> | Expense: ₹<span id="expense">0</span></p>
+        </div>
+
+        <form id="transactionForm">
+            <select id="type">
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+            <input type="number" id="amount" placeholder="Amount" required>
+            <input type="text" id="description" placeholder="Description">
+            <button type="submit">Add</button>
+        </form>
+
+        <h3>Transactions</h3>
+        <ul id="transactionList"></ul>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
