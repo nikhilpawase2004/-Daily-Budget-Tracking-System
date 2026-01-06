@@ -6,7 +6,7 @@ body {
     width: 500px;
     margin: auto;
     background: white;
-    padding: 20px;
+    padding: 30px;
     border-radius: 8px;
 }
 h1 {
@@ -44,3 +44,4 @@ li {
     padding: 10px;
     border-radius: 5px;
 }
+
