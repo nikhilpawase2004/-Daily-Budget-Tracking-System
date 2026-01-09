@@ -1,5 +1,5 @@
 # -Daily-Budget-Tracking-System
-.
+
 
 💰 Daily Budget Tracking System (Flask Web Application)
 
